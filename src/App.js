@@ -83,7 +83,7 @@ function App() {
           <h3 className="text-5xl font-bold mb-16 mt-16">My Projects</h3>
           <div className="mx-auto w-1/2">
             <div className="mb-14">
-              <h4 className="text-2xl font-semibold mb-8">Web Development</h4>
+              <h4 className="text-3xl font-semibold mb-8">Web Development</h4>
               {Array(3)
                 .fill(0)
                 .map((_, index) => (
@@ -100,14 +100,23 @@ function App() {
                         />
                       </div>
                       <div className="flex-grow">
-                        {/* Add text here */}
+                        {index === 0 && (
+                          <a
+                            href="https://www.gkldevelopment.com/GKL-development-1.0/"
+                            target="_blank"
+                            rel="my portfolio"
+                            className="text-black hover:underline text-xl"
+                          >
+                            My first portfolio
+                          </a>
+                        )}
                       </div>
                     </div>
                   </div>
                 ))}
             </div>
             <div className="mb-14">
-              <h4 className="text-2xl font-semibold mb-8">Machine Learning & AI</h4>
+              <h4 className="text-3xl font-semibold mb-8">Machine Learning & AI</h4>
               {Array(3)
                 .fill(0)
                 .map((_, index) => (
@@ -131,7 +140,7 @@ function App() {
                 ))}
             </div>
             <div>
-              <h4 className="text-2xl font-semibold mb-8">Fun and practices</h4>
+              <h4 className="text-3xl font-semibold mb-8">Fun and practices</h4>
               {Array(2)
                 .fill(0)
                 .map((_, index) => (
