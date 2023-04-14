@@ -1,0 +1,98 @@
+/* For Firefox */
+html {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Internet Explorer */
+html {
+  -ms-overflow-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive styles for 700px or less */
+@media screen and (max-width: 700px) {
+
+  /* Stack image below the title and subtitle */
+  .landing-page {
+    flex-direction: column;
+  }
+
+  /* Adjust image display for smaller screens */
+  .lg-image {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+
+  /* Remove the arrow for scrolling */
+  .scroll-arrow {
+    display: none;
+  }
+
+  /* Set the max-width of the content to fit the screen */
+  .container {
+    max-width: 100%;
+  }
+
+  .landing-title {
+    font-size: 3rem;
+  }
+
+  .landing-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .px-10 {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .space-x-20> :not([hidden])~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
+
+/* Add navbar links hover effects */
+.nav-link {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Gives space to 'My Project' when page is scrolled by the arrow on landpage */
+#learning-path {
+  scroll-padding-top: 20px;
+}
+
+
+.hidden {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
