@@ -38,7 +38,7 @@ html {
     display: none;
   }
 
-  /* Set the max-width of the content to fit the screen */
+  /* Set the max-width of the content to fit the screen and add some font-size standards*/
   .container {
     max-width: 100%;
   }
@@ -60,6 +60,15 @@ html {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  /*Set the containers for the project links to a new size to fit the screen*/
+  .my-projects {
+    width: 100%;
+  }
+
+  .link-container {
+    width: 80%;
   }
 }
 

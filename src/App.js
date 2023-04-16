@@ -34,10 +34,10 @@ function App() {
           }}>
           <ul className="flex justify-center space-x-20">
             <li className="text-2xl">
-              <a to="#" onClick={handleMenuClick} className='nav-link'>Home</a>
+              <a href='#home' onClick={handleMenuClick} className='nav-link'>Home</a>
             </li>
             <li className="text-2xl">
-              <a to="#" onClick={handleMenuClick} className='nav-link'>Projects</a>
+              <a href='#projects' onClick={handleMenuClick} className='nav-link'>Projects</a>
             </li>
             <li className="text-2xl">
               <a to="#" onClick={handleMenuClick} className='nav-link'>About</a>
@@ -80,8 +80,8 @@ function App() {
         </section>
 
         <section id="learning-path" className="text-center mt-10">
-          <h3 className="text-5xl font-bold mb-16 mt-16">My Projects</h3>
-          <div className="mx-auto w-1/2">
+          <h3 className="text-5xl font-bold mb-16 mt-16" id='projects'>My Projects</h3>
+          <div className="mx-auto w-1/2 my-projects">
             <div className="mb-14">
               <h4 className="text-3xl font-semibold mb-8">Web Development</h4>
               {Array(3)
@@ -89,7 +89,7 @@ function App() {
                 .map((_, index) => (
                   <div
                     key={`web-${index}`}
-                    className="my-3 mx-auto p-4 border-2 border-black rounded-lg w-full h-20"
+                    className="my-3 mx-auto p-4 border-2 border-black rounded-lg w-full h-20 link-container"
                   >
                     <div className="flex items-center h-full">
                       <div className="mr-4">
@@ -105,9 +105,19 @@ function App() {
                             href="https://www.gkldevelopment.com/GKL-development-1.0/"
                             target="_blank"
                             rel="my portfolio"
-                            className="text-black hover:underline text-xl"
+                            className="text-black hover:underline text-xl hover:text-zinc-800"
                           >
                             My first portfolio
+                          </a>
+                        )}
+                        {index === 1 && (
+                          <a
+                            href="http://www.thenftgallery.online"
+                            target="_blank"
+                            rel="nft gallery"
+                            className="text-black hover:underline text-xl hover:text-zinc-800"
+                          >
+                            The NFT Gallery
                           </a>
                         )}
                       </div>
@@ -122,7 +132,7 @@ function App() {
                 .map((_, index) => (
                   <div
                     key={`ml-${index}`}
-                    className="my-3 mx-auto p-4 border-2 border-black rounded-lg w-full h-20"
+                    className="my-3 mx-auto p-4 border-2 border-black rounded-lg w-full h-20 link-container"
                   >
                     <div className="flex items-center h-full">
                       <div className="mr-4">
@@ -146,7 +156,7 @@ function App() {
                 .map((_, index) => (
                   <div
                     key={`fun-${index}`}
-                    className="my-3 mx-auto p-4 border-2 border-black rounded-lg w-full h-20"
+                    className="my-3 mx-auto p-4 border-2 border-black rounded-lg w-full h-20 link-container"
                   >
                     <div className="flex items-center h-full">
                       <div className="mr-4">
@@ -157,7 +167,16 @@ function App() {
                         />
                       </div>
                       <div className="flex-grow">
-                        {/* Add text here */}
+                        {index === 0 && (
+                          <a
+                            href="https://www.gkldevelopment.com/diceGame/"
+                            target="_blank"
+                            rel="dice game"
+                            className="text-black hover:underline text-xl hover:text-zinc-800"
+                          >
+                            Dice Game
+                          </a>
+                        )}
                       </div>
                     </div>
                   </div>
