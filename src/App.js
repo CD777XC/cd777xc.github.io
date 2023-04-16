@@ -55,11 +55,11 @@ function App() {
             <h1 className="text-8xl font-bold landing-title">Programming Portfolio</h1>
             <h2 className="text-4xl mt-2 landing-subtitle">All my projects during the past year</h2>
           </div>
-          <div className="w-1/2 ml-10 lg-image">
+          <div className="w-full ml-10 lg-image">
             <img
-              src="./landpage-img.png"
+              src="./2003.jpg"
               alt="landing page"
-              className="max-w-full h-auto rounded-lg"
+              className="max-w-full h-auto rounded-lg border-black border-2"
             />
           </div>
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 scroll-arrow">
