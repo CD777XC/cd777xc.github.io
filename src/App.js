@@ -53,7 +53,7 @@ function App() {
           className="h-screen flex flex-row items-center justify-center landing-page">
           <div className="text-center">
             <h1 className="text-8xl font-bold landing-title">Programming Portfolio</h1>
-            <h2 className="text-4xl mt-2 landing-subtitle">All my projects during the past year</h2>
+            <h2 className="text-4xl mt-2 landing-subtitle">by LowGok - Louis G.</h2>
           </div>
           <div className="w-full ml-10 lg-image">
             <img
